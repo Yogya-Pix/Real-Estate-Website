@@ -30,7 +30,7 @@ export default function Map() {
 
     return (
         <>
-            <Link to="/property">Go to Map</Link>
+            {/* <Link to="/property">Go to Map</Link> */}
             <GoogleMap
                 zoom={18}
                 center={{ lat: 28.50881307092298, lng: 77.42020657424001 }}
