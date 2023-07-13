@@ -75,7 +75,7 @@ function Slider(props) {
                   <p id="middle-dot">.</p>
                   <p>{props.item.feature}</p>
                 </div>
-                <h3><CurrencyNet buildCurrency="INR" value={10} isfloat={false} shortenCurrency={true} /></h3>
+                <h3><CurrencyNet buildCurrency="INR" value={props.item.price} isfloat={true} shortenCurrency={false} /></h3>
               </div>
             </Link>
 
