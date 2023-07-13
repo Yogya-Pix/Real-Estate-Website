@@ -19,6 +19,9 @@ export default function Navbar(props) {
                     </div>
                     <div className='right'>
                         <p style={{ color: props.mode }}>Contact Us</p>
+                        <Link to={"/about"}>
+                            <p style={{ color: props.mode }}>About Us</p>
+                        </Link>
                         <Link to={'/property'}>
                             <button className='btn-search' style={{ backgroundColor: props.mode, color: props.mode === 'white' ? 'black' : 'white' }}>Search Properties</button>
                         </Link>

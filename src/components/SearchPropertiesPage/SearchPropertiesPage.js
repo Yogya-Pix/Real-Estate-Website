@@ -61,7 +61,7 @@ function SearchPropertiesPage() {
   return (
     <>
       <Allfilter />
-      {isVisible && <FilterBtnRightPopUP />}
+      {/* {isVisible && <FilterBtnRightPopUP olddata={data}/>} */}
       <div className="search-results-container-main">
         <div className="search-results-filters-shown">
           <h1>Search Results </h1>
@@ -82,10 +82,10 @@ function SearchPropertiesPage() {
 
 
         </div>
-        <div className="filter-list-btn" onClick={PopBtnVisibility} style={{ cursor: "pointer" }}>
+        {/* <div className="filter-list-btn" onClick={PopBtnVisibility} style={{ cursor: "pointer" }}>
           <Filter />
           Filters
-        </div>
+        </div> */}
       </div>
 
 

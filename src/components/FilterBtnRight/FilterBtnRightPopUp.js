@@ -2,17 +2,18 @@ import React, { useState } from 'react'
 import './FilterBtnRightPopUp.css'
 import useFetch from '../../hooks/useFetch'
 import { ReactComponent as Cross } from '../../assets/cross.svg'
+import Searchfilter from './Searchfilter';
 // import useFetch from '../../hooks/useFetch'
 
 
 
-function FilterBtnRightPopUp() {
+function FilterBtnRightPopUp({olddata}) {
 
-    const [FilterValue, setFilterValue] = useState([]);
+    const [FilterValue, setFilterValue] = useState("UK");
     const [FeatureFilterValue, setFeatureFilterValue] = useState([]);
     const [CountryFilterValue, setCountryFilterValue] = useState([]);
     const [PropertyTypeFilterValue, setPropertyTypeFilterValue] = useState([]);
-    const { data, loading, error } = useFetch(`https://real-estate-backend-wihx.onrender.com/api/property`)
+    const { data, loading, error } = useFetch(`https://real-estate-backend-wihx.onrender.com/api/property?country=${FilterValue}&&location=${CountryFilterValue}`)
 
     return (
         <>
@@ -24,7 +25,7 @@ function FilterBtnRightPopUp() {
                             <h4>Property Features</h4>
                             <ul className="filter-categories">
                                 {
-                                    data.map((item) => (
+                                    olddata.map((item) => (
                                         <li key={item._id}>
                                             <input type="button"
                                                 value={item.feature}
@@ -44,13 +45,13 @@ function FilterBtnRightPopUp() {
                             <h4>Nearby Cities</h4>
                             <ul className="filter-categories">
                                 {
-                                    data.map((item) => (
+                                    olddata.map((item) => (
                                         <li key={item._id}>
                                             <input type="button"
-                                                value={item.country}
+                                                value={item.location}
                                                 onClick={e => {
-                                                    console.log([item.country])
-                                                    setCountryFilterValue([item.country])
+                                                    console.log([item.location])
+                                                    setCountryFilterValue([item.location])
                                                 }}
                                             />
                                         </li>
@@ -63,7 +64,7 @@ function FilterBtnRightPopUp() {
                             <h4>Type of Property</h4>
                             <ul className="filter-categories">
                                 {
-                                    data.map((item) => (
+                                    olddata.map((item) => (
                                         <li key={item._id}>
                                             <input type="button"
                                                 value={item.propertytype}
@@ -78,16 +79,16 @@ function FilterBtnRightPopUp() {
                             </ul>
                         </div>
                         <div className="filter-section">
-                            <h4>Price Range</h4>
+                            <h4>Country</h4>
                             <ul className="filter-categories">
                                 {
-                                    data.map((item) => (
+                                    olddata.map((item) => (
                                         <li key={item._id}>
                                             <input type="button"
-                                                value={item.feature}
+                                                value={item.country}
                                                 onClick={e => {
-                                                    console.log([item.feature])
-                                                    setFilterValue([item.feature])
+                                                    console.log([item.country])
+                                                    setFilterValue([item.country])
                                                 }}
                                             />
                                         </li>
@@ -101,6 +102,8 @@ function FilterBtnRightPopUp() {
                     </div>
                 </div>
             </div>
+
+            <Searchfilter data={data} />
         </>
     )
 }
