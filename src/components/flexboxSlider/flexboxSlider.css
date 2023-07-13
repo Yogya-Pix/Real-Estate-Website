@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --animation-time: 0.2s;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.flexbox_slider-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    margin-bottom: -4rem;
+}
+
+.flexbox_slider-heading h4 {
+    font-size: 28px;
+}
+
+.flexbox_slider {
+    display: flex;
+    margin: 4rem;
+}
+
+.card {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    height: 15rem;
+    width: 7rem;
+    border-radius: 1rem;
+    margin: .5rem;
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    transition: width var(--animation-time) linear;
+}
+
+.card.active {
+    width: 75rem;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 24PX;
+    height: 100%;
+    transition: scale(0.66);
+    transition: all var(--animation-time) linear;
+
+}
+
+.card.active .content {
+    transform: scale(1);
+}
+
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 3rem;
+    margin-top: 4rem;
+
+}
+
+.data h4 {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+.card.active .data h4 {
+    font-size: 18px;
+    width: 500px;
+    margin-bottom: -15px;
+    text-align: left;
+    line-height: 90px;
+}
+
+.content h4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: -70px;
+}
+
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem;
+    padding-bottom: 7rem;
+    transition: all var(--animation-time) linear;
+    color: black;
+    opacity: 0;
+    width: 60rem;
+}
+
+
+
+.detail h4 {
+    padding-bottom: 15px;
+}
+
+.detail p {
+    font-size: 1.3rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card.active .detail {
+    opacity: 1;
+    margin-left: 0;
+}
+
+.flexbox_slider-content {
+    height: 20rem;
+    width: 5rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    transform: scale(1.5);
+    transition: all var(--animation-time) linear;
+}
+
+.card.active .flexbox_slider-content {
+    width: 100%;
+    transform: scale(1);
+}

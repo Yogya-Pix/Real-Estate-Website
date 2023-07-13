@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.parent-main-filterbox-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-filterbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 90%;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 40px;
+    z-index: 2;
+}
+
+.filters-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filter-types {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.filter-search-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 260px;
+    height: 171px;
+    border: 3px solid black;
+    border-radius: 100px;
+    transition: all .2s;
+    font-weight: 600;
+}
+
+.filter-search-btn-container:hover {
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+}
+
+.filter-property-search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 90%;
+    margin: 20px;
+}
+
+.filter-property-search-bar input {
+    background: black;
+    width: 870px;
+    height: 70px;
+    margin-left: -15px;
+    border: 3px solid white;
+    border-radius: 40px;
+    padding: 12px;
+    outline: none;
+    color: white;
+}
+
+.show-on-map-btn {
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    top: -60px;
+    z-index: 100;
+    background-color: white;
+    height: 96px;
+    width: 320px;
+    border-radius: 59px;
+}
+
+.filter-search-btn-container svg {
+    width: 25px;
+    padding-right: 5px;
+    color: black;
+    transition: all .2s;
+}
+
+.filter-search-btn-container:hover svg {
+    color: white;
+}
+
+.show-on-map-btn svg {
+    width: 50px;
+    color: black;
+    transition: all .2s;
+}
+
+
+.show-on-map-btn:hover svg {
+    color: white;
+}

@@ -1,0 +1,10 @@
+.register-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.google-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7rem;
+}

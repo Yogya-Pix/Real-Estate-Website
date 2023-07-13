@@ -1,0 +1,269 @@
+.card_section1 {
+    display: flex;
+    justify-content: center;
+    height: 484px;
+    font-family: "Roboto", sans-serif;
+    transition: 0.25s;
+    color: black;
+    margin-top: 22px;
+}
+
+.card_section1.active1 {
+    width: 500px;
+}
+
+.cards1 {
+    display: flex;
+    justify-content: center;
+    /* max-width: 1423px; */
+    width: calc(100% - 382px);
+    height: 454px;
+    position: relative;
+    top: 26px;
+}
+
+.cards1 .card1 {
+    position: relative;
+    min-width: 100px;
+    overflow: hidden;
+    margin: 5px;
+    background-size: auto 150%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s var(--cb);
+    border-radius: 24px;
+    border: 3px solid #828282;
+}
+
+.cards1 .card1 .label1 {
+    /* display: flex; */
+    display: none;
+    /* position: absolute; */
+    right: 0;
+    /* height: 40px; */
+    transition: 0.5s var(--cb);
+}
+
+.cards1 .card1.active1 .label1 {
+    display: flex;
+    bottom: 20px;
+    left: 20px;
+    flex-direction: column;
+}
+
+.cards1 .card1.active1 {
+    flex-grow: 10000;
+    background-size: 100% 150%;
+}
+
+.cards1 .card1:not(.active1) .label1 {
+    bottom: 10px;
+    left: 10px;
+}
+
+.cards1 .card1 .video1::before {
+    content: "Videos";
+    width: 56px;
+    margin-top: 14px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+}
+
+.cards1 .card1 .vr1::before {
+    content: "VR";
+    width: 56px;
+    margin-top: 14px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    color: #828282;
+}
+
+.cards1 .card1 .image1::before {
+    content: "Photos";
+    width: 56px;
+    margin-top: 14px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+}
+
+.cards1 .card1 .shadow1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    position: absolute;
+    bottom: 82px;
+    left: 23px;
+    height: 282px;
+    transition: 0.5s var(--cb);
+    z-index: -1;
+}
+
+.cards1 .card1.active1 .shadow1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: linear-gradient(0, #0004, transparent);
+    transition: 0.5s var(--cb);
+}
+
+.vrcontainer1.active1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.437)), url('../../../images/modernkitchen.jpg');
+    background-repeat: no-repeat;
+}
+
+.vr1_title1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.vr1left1 {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.vr1left1 p {
+    padding-left: 20px;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.vr1_title1 {
+    display: flex;
+    position: relative;
+    right: 50px;
+}
+
+.btn-vrfullscreen1 {
+    display: flex;
+    padding: 8px 30px;
+    align-items: center;
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 109px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.btn-vrfullscreen1 p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    padding-right: 15px;
+    color: #000000;
+}
+
+.fullmodelinkstyle1 {
+    text-decoration: none;
+}
+
+.clicktodrag1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.dragimage1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dragimage1 p {
+    padding-top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.vr1_navbar1 {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 37%;
+}
+
+.navbar-btn1 {
+    display: flex;
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 109px;
+    padding: 4px 5px;
+}
+
+.btnvr1 {
+    padding: 4px 15px;
+    margin-right: 8px;
+    color: black;
+    background: white;
+    border: none;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btnar1 {
+    padding: 4px 15px;
+    margin-right: 8px;
+    color: black;
+    background: white;
+    border: none;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btnport1 {
+    padding: 4px 15px;
+    color: black;
+    background: white;
+    border: none;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.activevr{
+    color: white;
+    background: #000000;
+}

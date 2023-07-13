@@ -1,0 +1,240 @@
+.display_container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 180px;
+    left: 160px;
+}
+
+.display_container p {
+    color: white;
+}
+
+.location_name p {
+    word-spacing: 6px;
+}
+
+.location_name p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.location_name p span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 60px;
+}
+
+.display_quote {
+    width: 970px;
+    height: 170px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.explore {
+    padding: 0;
+    width: 25.8%;
+    border-radius: 36px;
+}
+
+.btn-explore {
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 4px solid black;
+    border-radius: 36px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+.double_lessthan {
+    padding-right: 10px;
+    display: flex;
+}
+
+.double_lessthan svg {
+    color: black;
+}
+
+.btn-span {
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    height: 100%;
+    width: 0;
+    border-radius: 36px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.btn-explore:hover .btn-span {
+    width: 100%;
+    z-index: -1;
+}
+
+.btn-explore:hover {
+    color: white;
+    border: 1px solid white;
+    z-index: 6;
+}
+
+.btn-explore:hover svg {
+    color: white;
+}
+
+.explore:hover {
+    padding: 3px;
+}
+
+.vr_animation {
+    display: flex;
+    position: relative;
+    bottom: 100px;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgb(255, 255, 255, 0), rgb(0, 0, 0));
+    z-index: 1;
+}
+
+.vrsvg {
+    position: absolute;
+    bottom: -100px;
+    right: 222px;
+    transition: 0.3s;
+}
+
+.hopin {
+    position: absolute;
+    right: 400px;
+    top: 96px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17.0767px;
+    line-height: 69px;
+    text-align: center;
+    color: black;
+    opacity: 0;
+    transform: scale(2, 2) rotate(8deg);
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.dollor1 {
+    position: absolute;
+    right: 453px;
+    bottom: 148px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.dollor2 {
+    position: absolute;
+    right: 375px;
+    bottom: 142px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.box {
+    position: absolute;
+    right: 414px;
+    bottom: 113px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.big_house {
+    position: absolute;
+    right: 477px;
+    bottom: 80px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.small_cross {
+    position: absolute;
+    right: 548px;
+    bottom: 78px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.big_cross {
+    position: absolute;
+    right: 534px;
+    bottom: 28px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.small_house {
+    position: absolute;
+    right: 588px;
+    bottom: 45px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.around_icons:hover .dollor1 {
+    bottom: 155px;
+}
+
+.around_icons:hover .dollor2 {
+    right: 360px;
+    bottom: 140px;
+}
+
+.around_icons:hover .box {
+    right: 405px;
+    bottom: 120px;
+}
+
+.around_icons:hover .big_house {
+    transform: rotate(-30deg);
+    bottom: 100px;
+}
+
+.around_icons:hover .dollor1,
+.around_icons:hover .dollor2,
+.around_icons:hover .box {
+    transform: rotate(-180deg);
+}
+
+.around_icons:hover .small_cross {
+    transform: rotate(90deg);
+    bottom: 90px;
+}
+
+.around_icons:hover .small_house {
+    transform: rotate(130deg);
+    bottom: 65px;
+}
+
+.around_icons:hover .big_cross {
+    transform: rotate(-90deg);
+    right: 544px;
+}
+
+.around_icons:hover .vrsvg{
+    transform: rotate(-8deg);
+}
+
+.around_icons:hover .hopin {
+    transform: scale(1, 1);
+    opacity: 1;
+}

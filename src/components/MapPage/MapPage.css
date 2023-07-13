@@ -1,0 +1,45 @@
+.map-included {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+.parent-map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 160px;
+
+}
+
+.show-on-list-btn svg {
+    width: 50px;
+    color: black;
+    transition: all .2s;
+}
+
+/* 
+.show-on-list-btn:hover svg {
+    color: white;
+} */
+
+.show-on-list-btn {
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    top: -60px;
+    z-index: 100;
+    background-color: white;
+    height: 96px;
+    width: 320px;
+    border-radius: 59px;
+}
+
+.show-on-list-btn:hover svg {
+    color: white;
+}

@@ -1,0 +1,99 @@
+.aboutproperty {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.aboutpropertydetial {
+    width: 73%;
+}
+
+.aboutpropertyname {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 68px;
+    color: #000000;
+}
+
+.s_title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    color: #000000
+}
+
+.s_desc {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.btn-showmore {
+    display: flex;
+    width: 10%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 46px;
+    text-decoration-line: underline;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-showmore:hover{
+    color: rgb(97, 97, 97);
+}
+
+.pop-up-property-container{
+    position: absolute;
+    justify-content: center;
+    top: 650px;
+    z-index: 1;
+}
+
+.pop-up-property-detail{
+    padding: 50px;
+    width: 74.1%;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.my-top{
+    margin-top: 30px;
+}
+
+.my1-top{
+    margin-top: 10px;
+}
+
+.xicon{
+    float: right;
+    cursor: pointer;
+}
+
+.dont-show-pop-up{
+    display: none;
+}
+
+.show-pop-up{
+    display: flex;
+}
+
+.row-summary{
+    display: flex;
+    align-items: center;
+}
+
+.pad-right{
+    padding-right: 15px;
+}

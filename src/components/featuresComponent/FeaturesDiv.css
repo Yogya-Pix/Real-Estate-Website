@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;600&display=swap');
+
+.features_parent-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    margin-bottom: 4rem;
+}
+
+.features-div {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 4px 4px 32px 8px rgba(0, 0, 0, 0.2);
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 94%;
+    height: 420px;
+}
+
+.features-child-div h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: 'DM Serif Display', serif;
+    margin-top: -1rem;
+    color: #363636;
+
+}
+
+.features-details {
+    width: 55%;
+    margin: 3rem;
+}
+
+.features-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+
+}
+
+.features-image img:hover {
+    transform: rotate(20deg);
+}
+
+
+.features-image img {
+    width: 20rem;
+    transition: all .25s ease-in-out;
+}
+
+.features-details h4 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.features-details p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.features-child-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+
+}
+
+.horizontal-break {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-break-div {
+    width: 125px;
+    height: 10px;
+    border: 0.08rem solid black;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+}
+
+.features-details-search-btn {
+    width: 15rem;
+    height: 3rem;
+    border: 3px black solid;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 2rem;
+}
+
+.features-details-search-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    border-radius: 4rem;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.features-details-search-btn p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.features-details-search-btn:hover {
+    color: white;
+    border-color: #ffffff;
+}
+
+.features-details-search-btn:hover:before {
+    width: 100%;
+}
+
+.features-details-AR-btn {
+    width: 12rem;
+    height: 3rem;
+    border: 3px black solid;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 2rem;
+}
+
+.features-details-AR-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    border-radius: 4rem;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.features-details-AR-btn p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.features-details-AR-btn:hover {
+    color: white;
+    border-color: #ffffff;
+}
+
+.features-details-AR-btn:hover:before {
+    width: 100%;
+}
+
+.features-details-input-signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem;
+    margin-left: 0rem;
+}
+
+.features-details-input-signup input {
+    width: 17rem;
+    height: 3rem;
+    border: 3px solid white;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+.features-details-input-signup-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 3rem;
+    background-color: white;
+    color: black;
+    border: 3px solid white;
+    border-radius: 3rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: 0.15s ease-in-out;
+}
+
+.features-details-input-signup-btn:hover {
+    background-color: black;
+    color: white;
+}

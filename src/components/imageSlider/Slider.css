@@ -1,0 +1,218 @@
+/* .super-parent-slider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 90px;
+} */
+
+.super-super-parent-slider{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.sssparentslider{
+    overflow: hidden;
+    max-height: 818px;
+}
+
+.super-parent-slider{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.parent-slider {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 1px solid white;
+    box-shadow: 2.78659px 2.78659px 8.35976px 2.78659px rgba(0, 0, 0, 0.05);
+    width: 453px;
+    margin: .3rem;
+    /* height: 380px; */
+    border-radius: 16px;
+    transition: all .4s;
+}
+
+.parent-slider:hover {
+    background-color: black;
+    /* color: white; */
+}
+
+.parent-slider:hover .applied-filters {
+    color: black;
+}
+
+.parent-slider:hover .slider-content-information {
+    color: white;
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+.slider-image {
+    padding-left: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* .slider-image-bgimg img {
+    width: 450px;
+} */
+
+.slider-image-vrimages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    right: 90px;
+
+}
+
+.vrimages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    background-color: white;
+    width: 72px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.vrimages img {
+    width: 30px;
+}
+
+.slider-content-information {
+    position: relative;
+    width: 350px;
+    margin: 12px;
+    font-size: 14px;
+}
+
+.slider-content-information p {
+    padding-left: 5px;
+    text-align: left;
+    transition: transform .2s;
+}
+
+.slider-content-information h4 {
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.parent-slider:hover .slider-content-information h3 {
+    transform: translateY(-12px);
+    /* margin-top: 4px; */
+}
+
+.parent-slider:hover .slider-content-information p {
+    /* margin-top: 4px; */
+    transform: translateY(5px);
+}
+
+.parent-slider:hover .slider-content-information #owner-para {
+    /* margin-top: 4px; */
+    color: white;
+    /* transform: translateY(5px); */
+
+}
+
+
+
+.slider-content-information h3 {
+    font-size: 18px;
+    transition: transform .1s;
+    padding-left: 5px;
+}
+
+.vrimages:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+
+
+.applied-filters {
+    display: flex;
+    width: 400px;
+    padding-left: 1px;
+    align-items: center;
+    font-weight: 600;
+}
+
+/* .applied-filters p {
+    width: 104px
+} */
+
+#owner-para {
+    color: #5B5B5B;
+}
+
+/* .applied-filters svg {
+    width: 2px;
+    height: 2px;
+    color: black;
+} */
+
+.parent-slider-content-information {
+    display: flex;
+    flex-direction: row;
+}
+
+#middle-dot {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+
+.parent-slider-content-information svg {
+    width: 18px;
+}
+
+.likebtn:hover {
+    color: red;
+}
+
+.likeicons{
+    display: flex;
+}
+
+.likebtn{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    width: 21px;
+    height: 20px;
+}
+
+.unlikebtn{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    border: white;
+}
+
+.showlikebtn {
+    display: flex;
+}
+
+.dontshowlikebtn {
+    display: none;
+}

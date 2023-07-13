@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-results-container-main {
+    margin: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-results-filters-shown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-results-filters-shown h1 {
+    margin-right: 30px;
+}
+
+.selected-filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.filter svg {
+    width: 10px;
+    margin: 5px;
+    margin-left: 10px;
+}
+
+.filter-list-btn {
+    padding: 5px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.filter-list-btn svg {
+    margin: 5px;
+}
+
+
+.slidershowmore {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.expandslider {
+    display: flex;
+    justify-content: center;
+}
+
+.showmoreslider {
+    padding: 20px;
+    border: 4px solid #000000;
+    border-radius: 88px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.showlessslider {
+    padding: 20px;
+    border: 4px solid #000000;
+    border-radius: 88px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.showmoresliderbtn {
+    display: flex;
+}
+
+.dontshowmoresliderbtn {
+    display: none;
+}
+
+.showmoreslider:hover {
+    text-decoration: underline;
+}
+
+.showlessslider:hover {
+    text-decoration: underline;
+}
+
+.showparent {
+    max-height: 100%;
+}

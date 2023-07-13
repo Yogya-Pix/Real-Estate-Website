@@ -1,0 +1,112 @@
+.super-parent-signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.parent-signup-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    background-color: white;
+}
+
+.signup-page-div {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.userbtn {
+    display: flex;
+    width: 130px;
+    height: 95px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 4rem;
+    margin: 10px;
+}
+
+.userbtn img {
+    width: 30px;
+}
+
+.login-signup-btn {
+    width: 350px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 4rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.signup-google-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 510px;
+    height: 95px;
+    border: 3px solid black;
+    border-radius: 5rem;
+}
+
+.signup-google-btn img {
+    display: flex;
+    width: 20px;
+    margin: 10px;
+}
+
+.signup-google-btn p {
+    padding-right: 10px;
+}
+
+.ar-vr-compatibility {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 95px;
+    width: 286px;
+    border: 3px solid black;
+    border-radius: 5rem;
+    margin: 10px;
+}
+
+.country-language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 95px;
+    width: 200px;
+    border: 3px solid black;
+    border-radius: 5rem;
+    margin: 10px;
+}
+
+.remiander {
+    text-align: center;
+    color: #828282;
+    margin: 10px;
+}
+
+.remiander h4 {
+    font-size: 24px;
+    margin: 5px;
+}
+
+.remiander p {
+    font-size: 14px;
+    margin: 5px;
+    font-weight: 500;
+}
