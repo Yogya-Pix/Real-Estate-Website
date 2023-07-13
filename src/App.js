@@ -12,6 +12,7 @@ import Map from './components/MapIntegration/Map'
 import FilterBtnRightPopUp from './components/FilterBtnRight/FilterBtnRightPopUp';
 import MapPage from './components/MapPage/MapPage';
 import Register from './pages/register/Register';
+import ContactUs from './pages/ContactUs/ContactUs';
 
 // import Maps from './components/MapIntegration/Map';
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/profile' element={<ProfilePage />} />
           <Route path='/signin' element={<SignIpPage1 />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/ContactUs' element={<ContactUs />} />
           <Route path='/searchbar/:key' element={<Searchbar />} />
         </Routes>
       </BrowserRouter>

@@ -54,7 +54,7 @@ function SearchPropertiesPage() {
   const [isVisible, setIsVisible] = useState(false);
 
   const PopBtnVisibility = () => {
-    setIsVisible(true);
+    setIsVisible(prevState => !prevState);
   };
 
 

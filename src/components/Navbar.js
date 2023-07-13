@@ -3,6 +3,7 @@ import '../styles/NavbarStyle.css'
 import { Link } from 'react-router-dom'
 import lightlogo from '../../src/assets/Logo_Light.png'
 import darklogo from '../../src/assets/Logo_Dark.png'
+import ContactUs from '../pages/ContactUs/ContactUs'
 
 export default function Navbar(props) {
     return (
@@ -18,7 +19,9 @@ export default function Navbar(props) {
                         </Link>
                     </div>
                     <div className='right'>
-                        <p style={{ color: props.mode }}>Contact Us</p>
+                        <Link to={'/ContactUs'}>
+                            <p style={{ color: props.mode }}>Contact Us</p>
+                        </Link>
                         <Link to={'/property'}>
                             <button className='btn-search' style={{ backgroundColor: props.mode, color: props.mode === 'white' ? 'black' : 'white' }}>Search Properties</button>
                         </Link>
