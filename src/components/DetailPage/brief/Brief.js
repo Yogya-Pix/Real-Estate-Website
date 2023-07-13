@@ -21,7 +21,7 @@ export default function Brief(props) {
     <div>
       <div className='header_container'>
         <div className='header_left'>
-          <p className='title'>{props.data.propertytitle}<span>.</span>${props.data.price} </p>
+          <p className='title'>{props.data.propertytitle}<span>.</span>₹{props.data.price} </p>
           <p className='features'>{props.data.bhk} Bhk<span>.</span>{props.data.propertytype}<span>.</span>{props.data.feature}</p>
           <p className='location'>{props.data.location}, {props.data.country}</p>
         </div>
