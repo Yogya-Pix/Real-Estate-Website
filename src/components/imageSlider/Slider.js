@@ -6,6 +6,7 @@ import { ReactComponent as ARimg } from '../../assets/ARimg.svg'
 import { ReactComponent as Mimg } from '../../assets/Mimg.svg'
 import { ReactComponent as FavIcon } from '../../assets/fav.svg'
 import { Link } from 'react-router-dom'
+import { CurrencyNet } from 'currencynet'
 import axios from 'axios'
 
 
@@ -74,7 +75,7 @@ function Slider(props) {
                   <p id="middle-dot">.</p>
                   <p>{props.item.feature}</p>
                 </div>
-                <h3>$ {props.item.price}</h3>
+                <h3><CurrencyNet buildCurrency="INR" value={10} isfloat={false} shortenCurrency={true} /></h3>
               </div>
             </Link>
 
