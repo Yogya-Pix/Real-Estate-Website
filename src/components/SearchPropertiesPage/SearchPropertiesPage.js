@@ -11,6 +11,9 @@ import useFetch from '../../hooks/useFetch'
 import $ from 'jquery'
 import Spinner from '../Spinner'
 import HomeSlider from '../HomeSlider'
+import FilterBtnRightPopUP from '../FilterBtnRight/FilterBtnRightPopUp'
+
+
 
 function SearchPropertiesPage() {
 
@@ -47,9 +50,18 @@ function SearchPropertiesPage() {
     value2.classList.remove("showmoresliderbtn")
   }
 
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  const PopBtnVisibility = () => {
+    setIsVisible(true);
+  };
+
+
   return (
     <>
       <Allfilter />
+      {isVisible && <FilterBtnRightPopUP />}
       <div className="search-results-container-main">
         <div className="search-results-filters-shown">
           <h1>Search Results </h1>
@@ -70,9 +82,10 @@ function SearchPropertiesPage() {
 
 
         </div>
-        <div className="filter-list-btn">
+        <div className="filter-list-btn" onClick={PopBtnVisibility} style={{ cursor: "pointer" }}>
           <Filter />
-          Filters</div>
+          Filters
+        </div>
       </div>
 
 
