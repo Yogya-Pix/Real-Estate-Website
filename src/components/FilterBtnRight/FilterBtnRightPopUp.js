@@ -4,8 +4,6 @@ import useFetch from '../../hooks/useFetch'
 import { ReactComponent as Cross } from '../../assets/cross.svg'
 // import useFetch from '../../hooks/useFetch'
 
-
-
 function FilterBtnRightPopUp() {
 
     const [FilterValue, setFilterValue] = useState([]);
@@ -13,6 +11,7 @@ function FilterBtnRightPopUp() {
     const [CountryFilterValue, setCountryFilterValue] = useState([]);
     const [PropertyTypeFilterValue, setPropertyTypeFilterValue] = useState([]);
     const { data, loading, error } = useFetch(`https://real-estate-backend-wihx.onrender.com/api/property`)
+
 
     return (
         <>
