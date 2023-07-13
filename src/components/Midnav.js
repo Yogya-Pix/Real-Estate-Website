@@ -7,7 +7,7 @@ import Spinner from './Spinner'
 
 export default function Midnav() {
 
-    const [value, setvalue] = useState("London");
+    const [value, setvalue] = useState("Noida");
 
     const { data, loading, error } = useFetch(`https://real-estate-backend-wihx.onrender.com/api/property?location=${value}`)
 
@@ -15,13 +15,13 @@ export default function Midnav() {
         <div>
             <div className='midcontainer'>
                 <div className='midnav_container'>
-                    <p onClick={() => setvalue("Manchaster")}>Manchaster</p>
-                    <p onClick={() => setvalue("Bristol")}>Bristol</p>
-                    <p onClick={() => setvalue("Nottingham")}>Nottingham</p>
-                    <p onClick={() => setvalue("Birmingham")}>Birmingham</p>
-                    <p onClick={() => setvalue("Brisbane")}>Brisbane</p>
-                    <p onClick={() => setvalue("Cairns")}>Cairns</p>
-                    <p onClick={() => setvalue("Darwin")}>Darwin</p>
+                    <p onClick={() => setvalue("Noida")} >Noida</p>
+                    <p onClick={() => setvalue("Delhi")}>Delhi</p>
+                    <p onClick={() => setvalue("Jaipur")}>Jaipur</p>
+                    <p onClick={() => setvalue("Dehradun")}>Dehradun</p>
+                    <p onClick={() => setvalue("Pune")}>Pune</p>
+                    <p onClick={() => setvalue("Dubai")}>Dubai</p>
+                    <p onClick={() => setvalue("Paris")}>Paris</p>
                     <p onClick={() => setvalue("London")}>London</p>
                 </div>
             </div>
